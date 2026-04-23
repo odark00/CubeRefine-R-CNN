@@ -393,7 +393,7 @@ class DLA(nn.Module):
             model_weights = torch.load(data + name)
         else:
             model_url = get_model_url(data, name, hash)
-            model_weights = model_zoo.load_url(model_url)
+            model_weights = torch.load("/kaggle/input/models/drwillway/dla34-ba72cf86-pth/pytorch/default/1/dla34-ba72cf86.pth")     # model_zoo.load_url(model_url)
 
         del model_weights["fc.weight"]
         del model_weights["fc.bias"]
