@@ -537,7 +537,7 @@ class DLABackbone(Backbone):
         super().__init__()
 
         if cfg.MODEL.DLA.TYPE == "dla34":
-            base = dla34(pretrained=True, tricks=cfg.MODEL.DLA.TRICKS)
+            base = dla34(pretrained=False, tricks=cfg.MODEL.DLA.TRICKS)
             self._out_feature_channels = {
                 "p2": 64,
                 "p3": 128,
