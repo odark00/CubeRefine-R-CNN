@@ -19,7 +19,7 @@ DATASETS:
   TEST: ('parcel3d_validation_1',)
   CATEGORY_NAMES: ('normal box',)
 MODEL:
-  WEIGHTS: data/cubercnn_box_oneclass.pth  # original checkpoint with adjusted head size
+  WEIGHTS: /kaggle/input/models/drwillway/dla34-ba72cf86-pth/pytorch/default/1/dla34-ba72cf86.pth #data/cubercnn_box_oneclass.pth  # original checkpoint with adjusted head size
   BACKBONE:
     FREEZE_AT: 4
   ROI_HEADS:
