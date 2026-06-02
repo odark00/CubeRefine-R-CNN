@@ -15,8 +15,8 @@ VIS_PERIOD: 1000  # only bbox images
 DATALOADER:
   NUM_WORKERS: 30
 DATASETS:
-  TRAIN: ('/kaggle/input/datasets/ayesha19765/parcel3d/parcel3d/parcel3d_train',)
-  TEST: ('/kaggle/input/datasets/ayesha19765/parcel3d/parcel3d/parcel3d_validation',)
+  TRAIN: ('/kaggle/input/datasets/ayesha19765/parcel3d/parcel3d/misc/omni3d_json/parcel3d_train',)
+  TEST: ('/kaggle/input/datasets/ayesha19765/parcel3d/parcel3d/misc/omni3d_json/parcel3d_validation',)
   CATEGORY_NAMES: ('normal box',)
 MODEL:
   WEIGHTS: /kaggle/input/models/drwillway/dla34-ba72cf86-pth/pytorch/default/1/dla34-ba72cf86.pth  # original checkpoint with adjusted head size
